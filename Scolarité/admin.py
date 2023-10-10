@@ -24,18 +24,21 @@ class FilièreAdmin(admin.ModelAdmin):
 # Register your models here.
 @admin.register(Etudiant)
 class EtudiantAdmin(admin.ModelAdmin):
-    list_display = ('display_image','prenom', 'nom', 'nom_de_famille','filière','display_dossier')
+    # list_display = ('prenom', 'nom', 'nom_de_famille','filière','image','dossier')
+    # list_display = ('display_image','prenom', 'nom', 'nom_de_famille','filière','display_dossier')
+    list_display = ('display_image','prenom', 'nom', 'nom_de_famille','filière','dossier')
+    
     list_filter = ('prenom', 'nom', 'nom_de_famille','filière')
     search_fields = ('prenom', 'nom', 'nom_de_famille','filière')
 
     def display_image(self, obj):
-        return format_html('<img src="{}" width="50" height="50" />', obj.image.url)
+        return format_html('<img src="{}" width="60" height="60" />', obj.image.url)
     display_image.short_description = " L'image de l'etudiant "
     
 
-    def display_dossier(self, obj):
-        return format_html('<iframe src="{}" width="600" height="500" frameborder="0"></iframe>', obj.dossier.url)
-    display_dossier.short_description = " Le dossier de l'etudiant "
+    # def display_dossier(self, obj):
+    #     return format_html('<iframe src="{}" width="600" height="500" frameborder="0"></iframe>', obj.dossier.url)
+    # display_dossier.short_description = " Le dossier de l'etudiant "
     
 # admin.site.register(Faculty)
 # admin.site.register(Sector)

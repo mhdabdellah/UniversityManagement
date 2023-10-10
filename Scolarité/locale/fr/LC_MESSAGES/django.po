@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-10 21:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: Scolarité/apps.py:8
+msgid "Scolarité"
+msgstr "Scolarité"
+
+#: Scolarité/models.py:9 Scolarité/models.py:20 Scolarité/models.py:34
+msgid "Nom"
+msgstr "Nom"
+
+#: Scolarité/models.py:12 Scolarité/models.py:21
+msgid "Faculté"
+msgstr "Faculté"
+
+#: Scolarité/models.py:13
+msgid "Facultés"
+msgstr "Facultés"
+
+#: Scolarité/models.py:24 Scolarité/models.py:36
+msgid "Filière"
+msgstr "Filière"
+
+#: Scolarité/models.py:25
+msgid "Filières"
+msgstr "Filières"
+
+#: Scolarité/models.py:32
+msgid "Image"
+msgstr "Image"
+
+#: Scolarité/models.py:33
+msgid "Prénom"
+msgstr "Prénom"
+
+#: Scolarité/models.py:35
+msgid "Nom de famille"
+msgstr "Nom de famille"
+
+#: Scolarité/models.py:37
+msgid "Dossier"
+msgstr "Dossier"
+
+#: Scolarité/models.py:40
+msgid "Étudiant"
+msgstr "Étudiant"
+
+#: Scolarité/models.py:41
+msgid "Étudiants"
+msgstr "Étudiants"

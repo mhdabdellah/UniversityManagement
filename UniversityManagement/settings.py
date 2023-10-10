@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'Scolarité',
+    'mediaLoader',
 ]
 
 MIDDLEWARE = [
@@ -110,8 +111,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-# LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'fr'
+LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
@@ -125,7 +126,7 @@ USE_TZ = True
 LANGUAGES = [
     ('en', _('English')),
     ('fr', _('French')),
-    ('ar', _('Arabic')),
+    # ('ar', _('Arabic')),
 ]
 
 
@@ -133,17 +134,27 @@ LANGUAGES = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 # STATIC_URL = '/static/'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-# Base url to serve media files
+
+
+
+# Base url to serve media filess
 MEDIA_URL = '/media/'
 
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -186,7 +197,7 @@ JAZZMIN_SETTINGS = {
 
     # "copyright": " University Of Nouakchott",
     
-    # "language_chooser": True,
+    "language_chooser": True,
     
 
     # UI Tweaks
