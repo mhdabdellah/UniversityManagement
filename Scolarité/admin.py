@@ -2,6 +2,7 @@ from django.contrib import admin
 
 
 from .models import Faculté, Filière, Etudiant
+from django.utils.translation import gettext_lazy as trans
 
 from django.utils.html import format_html
 
@@ -33,10 +34,8 @@ class EtudiantAdmin(admin.ModelAdmin):
 
     def display_image(self, obj):
         return format_html('<img src="{}" width="60" height="60" />', obj.image.url)
-    display_image.short_description = " L'image de l'etudiant "
-    
-
-    # def display_dossier(self, obj):
+    display_image.short_description = trans("L'image de l'etudiant ")
+    # def display_dossier(self, obj):س
     #     return format_html('<iframe src="{}" width="600" height="500" frameborder="0"></iframe>', obj.dossier.url)
     # display_dossier.short_description = " Le dossier de l'etudiant "
     
